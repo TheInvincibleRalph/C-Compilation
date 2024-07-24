@@ -89,6 +89,14 @@ int y =sq_of_num(5);
 String m = "RAPHAEL";
 int res = lengthOf(m);
  Serial.println(res);
+
+//string manipulation
+
+String firstname = "Boluwatife";
+String newstr;
+
+  newstr = firstname.substring(0,4);
+  Serial.println(newstr);
 }
 
 void loop() {
