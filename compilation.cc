@@ -71,5 +71,37 @@ void loop() {
  
 }
 
+
+
+//user-defined function
+
+int z = 5;
+
+void setup() {
+  // put your setup code here, to run once:
+ Serial.begin(115200);
+int x = sq_of_num(3);
+ Serial.println(x);
+int y =sq_of_num(5);
+ Serial.println(y);
+ Serial.println(z);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+ String name = "bolu";
+  Serial.println(name[4] =='\0'); //'\0' is a null character
+}
+
+//user-defined function that takes in an integer "num", and returns an integer value
+int sq_of_num(int num) {
+  int x = (num * num);
+  Serial.println(x);
+  return 5;
+  Serial.println(z);
+ 
+}
+
+
 //   continue just skips the current step imposed by a condition
 //   break ignores every other thing
