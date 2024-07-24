@@ -85,12 +85,16 @@ int x = sq_of_num(3);
 int y =sq_of_num(5);
  Serial.println(y);
  Serial.println(z);
+
+String m = "RAPHAEL";
+int res = lengthOf(m);
+ Serial.println(res);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
- String name = "bolu";
-  Serial.println(name[4] =='\0'); //'\0' is a null character
+//  String name = "bolu";
+//   Serial.println(name[4] =='\0'); //'\0' is a null character
 }
 
 //user-defined function that takes in an integer "num", and returns an integer value
@@ -100,6 +104,26 @@ int sq_of_num(int num) {
   return 5;
   Serial.println(z);
  
+}
+
+//finding the length of an array
+int lengthOf(String m) {
+ int count = 0;
+  while (m != '\0') {
+    m.remove(0, 1);
+    count++;
+  }
+  return count;
+}
+
+//OR
+
+int lengthOf(String m) {
+ int count = 0;
+  while (m[count] != '\0') {
+    count++;
+  }
+  return count;
 }
 
 
